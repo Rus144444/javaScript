@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="null.css">
+   <title>Задача №0</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <h1 class="header__title">Home work #2</h1>
+         </div>
+      </header>
+      <main class="main">
+         <div class="main__container"> 
+           <h1 class="main__title">Задача 0. Обчислити значення виразів</h1>
+            <div class="main__text"> 
+               <p>S1 = a + 12 + b</p>
+               <p>S2 = a + b / 2 * a</p>
+               <p>S3 = (a + b) * c</p>
+               <p>S4 = sin⁡ (a / -b)</p>
+            </div>
+            <script>
+               // Ввод данных
+               alert("Нужно ввести данные a, b і c");
+               let a = parseInt(prompt("Ввод данных для a", ""));
+               let b = parseInt(prompt("Ввод данных для b", ""));
+               let c = parseInt(prompt("Ввод данных для c", ""));
+
+               // Решение
+               s1 = a + 12 + b;
+               s2 = Math.sqrt((a + b) / (2 * a));
+               s3 = Math.cbrt((a + b) * c);
+               s4 = Math.sin(a / -b);
+
+               // Ввывод данных
+               document.write(`s1 = ${s1} <br> s2 = ${s2} <br> s3 = ${s3} <br> s4 = ${s4}`);
+            </script>
+            <br><br>
+            <div class="block__exit block-item">
+               <a class="block__link" href="index.html">Exit</a>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__block">2023 год</div> 
+         </div>
+      </footer>
+   </div>
+</body>
+</html>

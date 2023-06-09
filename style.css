@@ -1,0 +1,133 @@
+
+
+body{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 16px;
+   color:#151515;
+}
+
+[class*="__container"] {
+   max-width: 1230px;
+   margin: 0 auto;
+   padding: 0px 15px;
+}
+
+
+.header {
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+}
+
+.header__container {
+   height: 100px;
+   min-height: 100%;
+   min-width: 100%;
+   background-color: rgba(191, 194, 175, 0.679);
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-bottom: #151515 solid 1px;
+}
+
+.header__title {
+   font-size: 25px;
+   
+}
+
+/* ------------------------------------------------ */
+
+.main {
+   margin-top: 140px;
+}
+.main__container {
+}
+.main__block {
+}
+
+.main__title {
+   font-size: 30px;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.main__text {
+   font-size: 20px;
+}
+
+
+.main__text:not(:last-child) p {
+   margin-bottom: 20px;
+}
+
+.main__text:not(:last-child) {
+   margin-bottom: 40px;
+}
+
+.block {}
+
+.block-item {
+   border: #151515 solid 1px;
+   border-radius: 10px;
+   text-align: center;
+   padding: 20px;
+   background-color: rgba(142, 192, 213, 0.194);
+}
+.block-item:hover {
+background-color: rgba(142, 192, 213, 0.619);
+}
+
+.block-item:not(:last-child) {
+   margin-bottom: 30px;
+}
+
+.block__link {
+   color: #151515;
+}
+
+
+.block__link:hover {
+   text-decoration: underline;
+}
+
+/* ------------------------------------------------ */
+
+.footer {
+   
+
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+
+}
+
+
+.footer__container {
+   height: 60px;
+   min-height: 100%;
+   min-width: 100%;
+   background-color: rgba(191, 194, 175, 0.679);
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-top: #151515 solid 1px;
+}
+
+/* ------------------------------------------------ */
+
+.block-product__wrapper {
+   border: solid #151515 3px;
+   display: inline-block;
+}
+.block-product__title {
+   padding: 10px;
+}
+
+.block-product__item {
+   padding: 20px;
+   border: solid #151515 2px;
+}

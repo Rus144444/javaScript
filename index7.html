@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="null.css">
+   <title>Задача №7</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <h1 class="header__title">Home work #2</h1>
+         </div>
+      </header>
+      <main class="main">
+         <div class="main__container">
+            <h1 class="main__title">Задача 7. Знайти суму випадкового номера місяця (від 1 до 12) та випадкового номера дня (від 0 до 6).</h1>
+            <script>
+            // Ввод данных
+               let monthDateOne = 1;
+               let monthDateTwo = 12;
+               let dateOne = 0;
+               let dateTwo = 6;
+
+            // Решение
+               let monthRun = monthDateOne + Math.floor(Math.random() * (monthDateOne + monthDateTwo + 1));
+               let dateRun = dateOne + Math.floor(Math.random() * (dateOne + dateTwo + 1));
+               let totalRun = dateRun + monthRun;
+
+            // Ввывод данных
+               document.write(`
+               <div> Месяц: ${monthRun}</div> 
+               <div> День: ${dateRun}</div> 
+               <div> Сумма: ${totalRun}</div>`);
+            </script>
+            <br><br>
+            <div class="block__exit block-item">
+               <a class="block__link" href="index.html">Exit</a>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__block">2023 год</div> 
+         </div>
+      </footer>
+   </div>
+</body>
+</html>

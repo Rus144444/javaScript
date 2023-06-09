@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="null.css">
+   <title>Задача №3</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <h1 class="header__title">Home work #2</h1>
+         </div>
+      </header>
+      <main class="main">
+         <div class="main__container">
+            <h1 class="main__title">Задача 3. Дано вартість одиниці товару і кількість. Знайти загальну вартість та ПДВ (5% від загальної вартості).</h1>
+            <script>
+               // Ввод данных
+               alert("Введите цену товара, и количество товара");
+		         let priceProduct = parseFloat(prompt("Цена товара..", ""));
+		         let quantityProduct = parseInt(prompt("Количество товара..", ""));
+		         let taxPrice = 5;
+
+               // Решение
+		         let priceCost = priceProduct * quantityProduct;
+		         let taxWith = priceCost * taxPrice / 100
+
+               // Ввывод данных
+               document.write(`<table>
+                  <tr>
+                     <td>Значение:</td>
+                     <td> ${priceProduct} <br> ${quantityProduct} </td>
+                  </tr>
+                  <tr>
+                     <td>Сумма</td>
+                     <td>${priceCost}</td>
+                  </tr>
+                  <tr>
+                     <td>ПДВ</td>
+                     <td>${taxWith.toFixed(2)}</td>
+                  </tr>
+               </table>`)
+            </script>
+            <br><br>
+            <div class="block__exit block-item">
+               <a class="block__link" href="index.html">Exit</a>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__block">2023 год</div> 
+         </div>
+      </footer>
+   </div>
+</body>
+</html>

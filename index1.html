@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="null.css">
+   <title>Задача №1</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <h1 class="header__title">Home work #2</h1>
+         </div>
+      </header>
+      <main class="main">
+         <div class="main__container">
+            <h1 class="main__title">Задача 1. Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці</h1>
+            <script>
+               // Ввод данных
+               alert("Нужно ввести данные a, b");
+               let a = parseFloat(prompt("Ввод данных для a", ""));
+               let b = parseFloat(prompt("Ввод данных для b", ""));
+
+               // Решение
+               let numberOne = a + b;
+               let numberTwo = a * b;
+               let numberThree = a / b;
+
+               // Ввывод данных
+               document.write(`
+               <table border="3px">
+                  <tr>
+                     <th>Результат</td>
+                     <th>Значение</td>
+                  </tr>
+                  <tr>
+                     <th>Сумма</td>
+                     <td>${numberOne}</td>
+                  </tr>
+                  <tr>
+                     <th>Умножение</td>
+                     <td>${numberTwo}</td>
+                  </tr>
+                  <tr>
+                     <th>Деление</td>
+                     <td>${numberThree}</td>
+                  </tr>
+               </table>`);
+            </script>
+            <br><br>
+            <div class="block__exit block-item">
+               <a class="block__link" href="index.html">Exit</a>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__block">2023 год</div> 
+         </div>
+      </footer>
+   </div>
+</body>
+</html>
